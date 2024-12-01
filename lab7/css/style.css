@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+}
+/*Header*/
+h1 {
+    background-color: #1475d68f;
+    font-family: 'Papyrus';
+    font-size: 79px;
+    line-height: 250%;
+    text-align: right;
+    width: 100%;
+}
+
+header {
+    background-image: url(/lab7/images/lighthouselogooriginal.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#maincontent{
+    background-color: #1475d68f;
+}
+
+nav ul >div{
+    background-color: #e5b6f4b8;
+    padding: 6px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+nav{
+    height: auto;
+}
+
+nav ul li{
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+nav a:hover{
+    text-shadow: 0px 0px 1px rgb(245, 153, 100);
+}
+
+/*Main*/
+main {
+    padding: 20px;
+}
+
+/*Titles*/
+h2 {
+    width: 100%;
+    color: #1475d6aa;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    margin: 20px 0;
+}
+
+/*Content section*/
+.content {
+    background-color: aliceblue;
+}
+
+.content p{
+    font-size: larger;
+}
+
+.content img {
+    float: right; 
+    height: 450px;
+    margin: 0 0 20px 20px;
+    object-fit: cover; 
+}
+
+/*Footer*/
+footer {
+    background-color: rgba(113, 147, 233, 0.875);
+    font-size: 88%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1a1818;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Media queries tablet and mobile*/
+/*tablet*/
+@media screen and (min-width:720px) and (max-width:900px) {
+    h1 {
+        font-size: 65px;
+        text-align:right;
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        padding: 12px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px 30px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .content img{
+        width: 48%;
+        height: 580px;
+    }
+}
+
+/* mobile */
+@media screen and (min-width:0px) and (max-width:719px) {
+    h1 {
+        font-size: 40px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0b276e;
+        line-height: 1.2;
+        font-weight:bold;
+        padding: 10px;
+    }
+
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content p{
+        font-size: larger;
+    }
+
+    nav ul > div {
+        background-color: #5560fa07;
+        border-bottom: 1px solid #FFFFFF;
+        padding: 0;
+    }
+
+    .content {
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+    .content img {
+        display: none;
+    }
+
+    h2{
+        margin: 0px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
