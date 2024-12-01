@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 600px;
+    padding: 0 2em 1em;
+}
+
+.parts {
+    width: 560px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgb(223, 10, 220);
+    margin: 30px;
+    padding: 10px 20px;
+}
+
+h1 {
+    color: blue;
+    margin: 10px 10px;
+}
+
+form fieldset {
+    border: 1px solid #000000;
+    padding: 15px;
+    width: 526px;
+    margin-bottom: 15px;
+}
+
+form legend {
+    color: blue;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+.editlabels{
+    display: inline-block;
+    width: 210px; 
+    text-align: right; 
+}
+
+.editlabel2{
+    display: inline-block;
+    width: 100px; 
+}
+
+input {
+    width: 13em;
+}
+
+p {
+    margin: 10px 10px;
+}
+
+div {
+    margin-bottom: 0.5em;
+}
+
+input,
+select {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+input.left {
+    width: 1em;
+    padding-left: 0;
+}
+
+input.last {
+    margin-bottom: 1em;
+}
+
+#adults,
+#children {
+    width: 35px;
+}
+
+#smoking {
+    width: 1em;
+    margin-left: 0;
+}
+
+#subelements{
+    margin-left: 0px;
+}
+
+.elements{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#submit {
+    margin-left: 0;
+    width: 10em;
+}
+
+footer{
+    padding-top: 15px;
+    font-size:small;
+}
+
+.buttonsend {
+    display: flex;
+    padding-left: 85px;
+    justify-content: center;
+    gap: 3px;
+}
+
+button{
+    margin-right: 30px;
+}
+
+.buttonsettings{
+    margin-top: 7px;
+    padding-left: 10px;
+}
+
+span{
+    color: rgb(199, 14, 14);
+    display: inline;
+}

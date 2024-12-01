@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- PART 1-->
+    <div class="parts">
+        <h1>Sales Tax Calculator</h1>
+        <p>Enter Subtotal and Tax Rate and click "Calculate".</p>
+        <form name="salesTaxCalculator" id="salesTaxCalculator">
+            <div id="subelements">
+                <div class="elements">
+                    <label class="editlabels" for="subtotal">Subtotal:</label>
+                    <input type="number" name="subtotal" id="subtotal"><br>
+                </div>
+                <div class="elements">
+                    <label class="editlabels" for="taxRate">Tax Rate:</label>
+                    <input type="number" name="taxRate" id="taxRate"><br>
+                </div>
+                <div class="elements">
+                    <label class="editlabels" for="salesTax">Sales Tax:</label>
+                    <input type="number" name="salesTax" id="salesTax" readonly><br>
+                </div>
+                <div class="elements">
+                    <label class="editlabels" for="total">Total:</label>
+                    <input type="number" name="total" id="total" readonly><br>
+                </div>
+            </div>
+            <div class="buttonsend">
+                <button type="button" id="calculate">Calculate</button>
+                <button type="button" id="clear">Clear</button>
+            </div>
+        </form>
+        <footer>&copy; Alejandra Arteaga Diaz / n01710855 2024</footer>
+    </div>
+    <!-- PART 2-->
+    <div class="parts">
+        <h1>Change Calculator</h1>
+        <form name="changecalculator" id="changecalculator">
+            <div class="elements">
+                <label class="editlabels" for="amount">Enter amount of change due (0-99):</label>
+                <input type="number" name="amount" id="amount">
+                <div class="buttonsettings">
+                    <button type="button" id="calculateFirst">Calculate</button><br>
+                </div>
+            </div>
+            <div class="elements">
+                <label class="editlabels" for="quarters">Quarters:</label>
+                <input type="number" name="quarters" id="quarters"><br>
+            </div>
+            <div class="elements">
+                <label class="editlabels" for="dimes">Dimes:</label>
+                <input type="number" name="dimes" id="dimes"><br>
+            </div>
+            <div class="elements">
+                <label class="editlabels" for="nickels">Nickels:</label>
+                <input type="number" name="nickels" id="nickels"><br>
+            </div>
+            <div class="elements">
+                <label class="editlabels" for="pennies">Pennies:</label>
+                <input type="number" name="pennies" id="pennies"><br>
+            </div>
+            <footer>&copy; Alejandra Arteaga Diaz / n01710855 2024</footer>
+        </form>
+    </div>
+    <!-- PART 3-->
+    <div class="parts">
+        <h1>Income Tax Calculator</h1>
+        <form name="incometaxcalculator" id="incometaxcalculator">
+            <div class="elements">
+                <label class="editlabels" for="taxableincome">Enter taxable income:</label>
+                <input type="number" name="taxableincome" id="taxableincome">
+                <div class="buttonsettings">
+                    <button type="button" id="calculateSecond">Calculate</button><br>
+                </div>
+            </div>
+            <div class="elements">
+                <label class="editlabels" for="taxowed">Income tax owed:</label>
+                <input type="number" name="taxowed" id="taxowed"><br>
+            </div>
+            <footer>&copy; Alejandra Arteaga Diaz / n01710855 2024</footer>
+        </form>
+    </div>
+    <!-- PART 4-->
+    <div class="parts">
+        <h1>Reservation Request</h1>
+        <form name="reservation_form" id="reservation_form">
+            <fieldset>
+                <legend>General Information</legend>
+                <div>
+                    <label class="editlabel2" for="arrival_date">Arrival Date:</label>
+                    <input type="date" name="arrival_date" id="arrival_date">
+                    <span id="arrival_date_error" class="error"></span>
+                </div>
+                <div>
+                    <label class="editlabel2" for="nights">Nights:</label>
+                    <input type="number" name="nights" id="nights">
+                    <span id="nights_error" class="error"></span>
+                </div>
+                <div>
+                    <label class="editlabel2" for="adults">Adults:</label>
+                    <select name="adults" id="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <span id="adults_error" class="error"></span>
+                </div>
+                <div>
+                    <label class="editlabel2">Children:</label>
+                    <select name="children" id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <div>
+                    <label class="editlabel2" for="roomtype">Room type:</label>
+                    <input type="radio" name="room" id="standard" class="left">Standard
+                    <input type="radio" name="room" id="business" class="left">Business
+                    <input type="radio" name="room" id="suite" class="left last">Suite
+                </div>
+                <div>
+                    <label class="editlabel2">Bed type:</label>
+                    <input type="radio" name="bed" id="king" class="left">King
+                    <input type="radio" name="bed" id="double" class="left last">Double Double
+                </div>
+                <div>
+                    <input type="checkbox" name="smoking" id="smoking">Smoking
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label class="editlabel2" for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <span id="name_error" class="error"></span>
+                </div>
+                <div>
+                    <label class="editlabel2" for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <span id="email_error" class="error"></span>
+                </div>
+                <div>
+                    <label class="editlabel2" for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                    <span id="phone_error" class="error"></span>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" id="submit" value="Submit Request">
+            </div>
+            <footer>&copy; Alejandra Arteaga Diaz / n01710855 2024</footer>
+        </form>
+        <script src="js/calculations.js"></script>
+</body>
+
+</html>
